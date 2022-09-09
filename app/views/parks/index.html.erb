@@ -1,0 +1,11 @@
+<h1> List of State Parks </h1>
+
+<p><%= @parks.count %></p>
+
+<% @parks.each do |park| %>
+    <p><%= park.name  %></p>
+    <p><%= park.description  %></p>
+    <p><%= park.direction_info   %></p>
+    <p><%= park.open_hours %></p>
+<% end %>
+
